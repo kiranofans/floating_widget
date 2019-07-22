@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preference_margin_mid">8dp</dimen>
+    <dimen name="preference_margin_large">12dp</dimen>
+    <dimen name="preference_margin_small">4dp</dimen>
+    <dimen name="preference_margin_mini">2dp</dimen>
+    <dimen name="preference_activity_margin">16dp</dimen>
+
+    <dimen name="preference_text_size_mid">14dp</dimen>
+    <dimen name="preference_text_size_large">16dp</dimen>
+    <dimen name="preference_text_size_small">12dp</dimen>
+    <dimen name="preference_text_size_extra_large">18dp</dimen>
+
+</resources>
