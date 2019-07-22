@@ -6,8 +6,8 @@
     android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/close_floating_view_btn_foreground"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@drawable/background_white_circle_shape"
         android:src="@drawable/ic_close_white"/>
 
@@ -16,5 +16,6 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/background_white_circle_shape"
-        android:src="@drawable/ic_close_white"/>
+        android:src="@drawable/ic_close_white"
+        android:visibility="gone"/>
 </RelativeLayout>

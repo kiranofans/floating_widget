@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/floating_widget_layout"
     android:layout_width="match_parent"
@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:id="@+id/floating_widget_root_container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RelativeLayout
@@ -22,13 +22,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/preference_margin_mid"
                 android:src="@drawable/ic_clock" />
+
             <ImageView
                 android:id="@+id/increment_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 android:layout_marginStart="72dp"
-                android:src="@android:drawable/ic_dialog_email"/>
+                android:layout_marginTop="12dp"
+                android:src="@drawable/increment_circle_red" />
         </RelativeLayout>
 
         <!--&lt;!&ndash; this is the expanded layout &ndash;&gt;
@@ -78,16 +79,22 @@
 
         </LinearLayout>-->
 
-        <!--  Close button  -->
-        <include
-            layout="@layout/remove_floating_widget_layout"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="48dp"
-            android:id="@+id/close_widget_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
+
     </RelativeLayout>
 
-</FrameLayout>
+    <!--  Close button area -->
+    <FrameLayout
+        android:id="@+id/close_widget_button_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:visibility="gone">
+       <include
+           android:id="@+id/close_widget_button_view"
+           layout="@layout/remove_floating_widget_layout"/>
+    </FrameLayout>
+
+</RelativeLayout>
